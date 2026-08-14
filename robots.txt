@@ -1,3 +1,4 @@
+# EJOSSAH academic journal
 User-agent: *
 Allow: /
 
