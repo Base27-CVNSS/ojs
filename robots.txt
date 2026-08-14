@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /cache/
+Allow: /
+
+Sitemap: https://base27-cvnss.github.io/ojs/sitemap.xml
