@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: EJOSSAH Theme 1.0.0.0\n"
+"PO-Revision-Date: 2026-08-14 00:00+0700\n"
+"Last-Translator: Base27-CVNSS\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.themes.ejossah.name"
+msgstr "EJOSSAH Academic Theme"
+
+msgid "plugins.themes.ejossah.description"
+msgstr "An accessible academic theme for the Ethiopian Journal of the Social Sciences and Humanities."
+
+msgid "plugins.themes.ejossah.option.accentColour.label"
+msgstr "Accent colour"
+
+msgid "plugins.themes.ejossah.option.accentColour.description"
+msgstr "The colour used for links, calls to action and journal accents."
+
+msgid "plugins.themes.ejossah.option.showHero.label"
+msgstr "Journal introduction"
+
+msgid "plugins.themes.ejossah.option.showHero.description"
+msgstr "Show the EJOSSAH identity and key journal facts on the homepage."
+
+msgid "plugins.themes.ejossah.option.showHero.option"
+msgstr "Show the EJOSSAH journal introduction"
+
+msgid "plugins.themes.ejossah.hero.kicker"
+msgstr "Open access · Peer-reviewed scholarship"
+
+msgid "plugins.themes.ejossah.hero.title"
+msgstr "Ethiopian Journal of the Social Sciences and Humanities"
+
+msgid "plugins.themes.ejossah.hero.tagline"
+msgstr "Research and critical perspectives across Ethiopia, Africa and the wider world."
+
+msgid "plugins.themes.ejossah.hero.currentIssue"
+msgstr "Read the current issue"
+
+msgid "plugins.themes.ejossah.hero.submit"
+msgstr "Submit a manuscript"
+
+msgid "plugins.themes.ejossah.fact.since"
+msgstr "Published since"
+
+msgid "plugins.themes.ejossah.fact.publisher"
+msgstr "Publisher"
+
+msgid "plugins.themes.ejossah.fact.frequency"
+msgstr "Frequency"
+
+msgid "plugins.themes.ejossah.fact.biannual"
+msgstr "Biannual"
+
+msgid "plugins.themes.ejossah.fact.apc"
+msgstr "Article fee"
+
+msgid "plugins.themes.ejossah.fact.free"
+msgstr "No APC"
+
+msgid "plugins.themes.ejossah.fact.indexing"
+msgstr "Indexing"
