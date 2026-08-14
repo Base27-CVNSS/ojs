@@ -1,341 +1,64 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EJOSSAH — Ethiopian Journal of the Social Sciences and Humanities</title>
-  <meta name="description" content="EJOSSAH is the Ethiopian Journal of the Social Sciences and Humanities, published by the College of Social Sciences at Addis Ababa University.">
-  <meta name="theme-color" content="#6f1725">
-  <meta name="color-scheme" content="light dark">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="EJOSSAH promotes fresh scholarly enquiry on Ethiopia and the Horn of Africa in the social sciences and humanities.">
+  <meta name="theme-color" content="#116b48">
   <link rel="canonical" href="https://base27-cvnss.github.io/ojs/">
   <link rel="icon" type="image/svg+xml" href="./plugins/themes/ejossah/assets/ejossah-mark.svg">
   <link rel="manifest" href="./site.webmanifest">
   <link rel="stylesheet" href="./docs/assets/ejossah-page.css">
-
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="EJOSSAH">
   <meta property="og:title" content="EJOSSAH — Ethiopian Journal of the Social Sciences and Humanities">
-  <meta property="og:description" content="Open-access scholarship in the social sciences and humanities, published by Addis Ababa University.">
+  <meta property="og:description" content="Open-access scholarship on Ethiopia and the Horn of Africa, published by Addis Ababa University.">
   <meta property="og:url" content="https://base27-cvnss.github.io/ojs/">
-  <meta property="og:image" content="https://base27-cvnss.github.io/ojs/plugins/themes/ejossah/assets/ejossah-wordmark.svg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Periodical",
-    "name": "Ethiopian Journal of the Social Sciences and Humanities",
-    "alternateName": "EJOSSAH",
-    "issn": "2520-582X",
-    "url": "https://base27-cvnss.github.io/ojs/",
-    "inLanguage": "en",
-    "isAccessibleForFree": true,
-    "publisher": {
-      "@type": "CollegeOrUniversity",
-      "name": "College of Social Sciences, Addis Ababa University"
-    }
-  }
-  </script>
+  <meta property="og:image" content="https://base27-cvnss.github.io/ojs/docs/assets/ejossah-cover.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Periodical","name":"Ethiopian Journal of the Social Sciences and Humanities","alternateName":"EJOSSAH","issn":["2520-582X","1810-4487"],"url":"https://base27-cvnss.github.io/ojs/","inLanguage":"en","isAccessibleForFree":true,"publisher":{"@type":"CollegeOrUniversity","name":"College of Social Sciences, Addis Ababa University"}}</script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-
-  <header class="site-header" id="top">
-    <div class="institution-bar">
-      <div class="shell institution-bar__inner">
-        <a href="https://www.aau.edu.et/" rel="external">Addis Ababa University</a>
-        <div class="institution-bar__tools">
-          <span>E-ISSN 2520-582X</span>
-          <button class="text-button" id="languageToggle" type="button" aria-label="Switch language">VI</button>
-          <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
-            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.7A8.5 8.5 0 0 1 9.3 3.5 8.5 8.5 0 1 0 20.5 14.7Z"/></svg>
-          </button>
-        </div>
-      </div>
+  <a class="skip-link" href="#content">Skip to main content</a>
+  <header class="site-header">
+    <div class="topbar"><div class="shell topbar__inner"><a href="https://www.aau.edu.et/">Addis Ababa University</a><div class="topbar__meta"><span>College of Social Sciences</span><span>E-ISSN 2520-582X</span></div></div></div>
+    <div class="shell masthead">
+      <a class="brand" href="./"><img src="./plugins/themes/ejossah/assets/ejossah-mark.svg" alt="" width="66" height="66"><span><strong>EJOSSAH</strong><span>Ethiopian Journal of the Social Sciences and Humanities</span></span></a>
+      <div class="header-actions"><a class="header-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/login">Log in</a><a class="button button--green" href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions">Make a submission</a></div>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="journal-navigation">Menu</button>
     </div>
-
-    <div class="masthead shell">
-      <a class="brand" href="./" aria-label="EJOSSAH home">
-        <img src="./plugins/themes/ejossah/assets/ejossah-mark.svg" width="86" height="86" alt="">
-        <span class="brand__copy">
-          <strong>EJOSSAH</strong>
-          <span data-i18n="journalName">Ethiopian Journal of the Social Sciences and Humanities</span>
-        </span>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNavigation">
-        <span></span><span></span><span></span><span class="sr-only">Open navigation</span>
-      </button>
-
-      <nav class="primary-nav" id="primaryNavigation" aria-label="Primary navigation">
-        <a class="is-active" href="#current" data-i18n="navCurrent">Current issue</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/issue/archive" data-i18n="navArchive">Archives</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/announcement" data-i18n="navNews">Announcements</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions" data-i18n="navSubmit">Submissions</a>
-      </nav>
-    </div>
+    <div class="nav-wrap" data-navigation><nav class="shell primary-nav" id="journal-navigation" aria-label="Primary navigation">
+      <a class="is-active" href="./">Home</a><a href="./current.html">Current</a><a href="./archives.html">Archives</a><a href="./announcements.html">Announcements</a>
+      <details class="nav-dropdown"><summary>About</summary><div class="nav-dropdown__menu"><a href="./about.html">About the Journal</a><a href="./about.html#editorial-policy">Editorial Policy</a><a href="./about.html#submissions">Submissions</a><a href="./about.html#editorial-team">Editorial Team</a><a href="./about.html#author-guidelines">Author Guidelines</a><a href="./about.html#privacy">Privacy Statement</a><a href="./about.html#contact">Contact</a></div></details>
+    </nav></div>
   </header>
 
-  <main id="main-content">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__texture" aria-hidden="true"></div>
-      <div class="shell hero__grid">
-        <div class="hero__content reveal">
-          <p class="eyebrow"><span></span><span data-i18n="heroEyebrow">Open access · Published since 2003</span></p>
-          <h1 id="hero-title" data-i18n="heroTitle">Ideas that deepen our understanding of society and humanity.</h1>
-          <p class="hero__lede" data-i18n="heroLede">An interdisciplinary academic journal from the College of Social Sciences, Addis Ababa University.</p>
-          <div class="hero__actions">
-            <a class="button button--light" href="#current" data-i18n="readIssue">Read the current issue</a>
-            <a class="button button--outline-light" href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions" data-i18n="submitManuscript">Submit a manuscript</a>
-          </div>
-          <ul class="hero__signals" aria-label="Journal attributes">
-            <li><strong>21</strong><span data-i18n="volumes">Volumes</span></li>
-            <li><strong>2×</strong><span data-i18n="annual">Issues yearly</span></li>
-            <li><strong>0</strong><span data-i18n="apc">Article fee</span></li>
-          </ul>
-        </div>
+  <main id="content">
+    <section class="hero"><div class="shell hero__grid">
+      <div><p class="eyebrow">Open access · Peer reviewed · Since 2003</p><h1>Scholarship on Ethiopia and the Horn of Africa.</h1><p class="hero__lead">The Ethiopian Journal of the Social Sciences and Humanities promotes fresh scholarly enquiry through empirical and analytical research across the social sciences and humanities.</p><div class="hero__actions"><a class="button button--green" href="./current.html">Read the current issue</a><a class="button button--outline" href="./about.html#submissions">Submission guidelines</a></div></div>
+      <figure class="cover-figure"><div class="cover-figure__frame"><img src="./docs/assets/ejossah-cover.jpg" width="170" height="226" alt="Green cover of the Ethiopian Journal of the Social Sciences and Humanities"></div><figcaption><strong>Vol. 21 No. 2 (2025): December</strong>Latest issue · Published 20 July 2026</figcaption></figure>
+    </div></section>
 
-        <div class="issue-cover-wrap reveal reveal--delay" aria-label="Current issue cover">
-          <div class="issue-cover">
-            <div class="issue-cover__top">
-              <span>EJOSSAH</span>
-              <small>21 · 2</small>
-            </div>
-            <div class="issue-cover__mark">EJ</div>
-            <div class="issue-cover__title">Ethiopian Journal<br>of the Social Sciences<br>and Humanities</div>
-            <div class="issue-cover__bottom">
-              <span>December 2025</span>
-              <span>Addis Ababa</span>
-            </div>
-          </div>
-          <div class="issue-cover__caption">
-            <span data-i18n="latestIssue">Latest issue</span>
-            <strong>Vol. 21, No. 2</strong>
-          </div>
-        </div>
+    <aside class="notice-bar" aria-label="Latest announcement"><div class="shell notice-bar__inner"><span class="notice-label">Announcement</span><a href="./announcement-abcd.html">Call for Abstracts: Asset-based and community-led development in Ethiopia</a><time datetime="2025-05-19">19 May 2025</time></div></aside>
+
+    <section class="section"><div class="shell home-grid">
+      <div class="prose"><p class="eyebrow">About the Journal</p><h2>Rigorous enquiry, grounded evidence and original interpretation.</h2><p class="lead">EJOSSAH was officially launched in 2003 as the journal of the College of Social Sciences, Addis Ababa University.</p><p>The journal publishes original work based on primary empirical data—including surveys, interviews, focus group discussions, archives, newspapers and institutional documents—as well as secondary-data studies that make a clearly defined new contribution or reinterpretation.</p><p>Its publication formats include research articles, book reviews, short communications, obituaries and conference papers. All research articles undergo editorial screening and double-blind peer review.</p><a class="text-link" href="./about.html">Read the complete journal profile →</a></div>
+      <aside class="sidebar"><div class="side-card"><h3>Journal information</h3><dl class="fact-list"><div><dt>Publisher</dt><dd>College of Social Sciences, Addis Ababa University</dd></div><div><dt>Frequency</dt><dd>Biannual: June &amp; December</dd></div><div><dt>Language</dt><dd>English</dd></div><div><dt>APC</dt><dd>Free</dd></div><div><dt>Access</dt><dd>Open Access</dd></div></dl></div></aside>
+    </div></section>
+
+    <section class="section section--soft"><div class="shell"><header class="section-heading"><div><p class="eyebrow">Current Issue</p><h2>Vol. 21 No. 2 (2025): December</h2><p>Five original research articles · pp. 1–108</p></div><a class="text-link" href="./current.html">View complete issue →</a></header>
+      <div class="article-list">
+        <article class="article-row"><span class="article-row__num">01</span><div><div class="article-row__meta"><span>Research article</span><span>pp. 1–19</span></div><h3><a href="./article-peripheral.html">Peripheral vs. Center-Seeking Nationalisms and Center-Periphery Relations in Ethiopia</a></h3><p class="article-row__subtitle">Post-1991 Somali-Oromo Relations</p><p class="article-row__authors">Dawit Biazen Demesse</p></div><div class="article-row__actions"><a class="mini-link" href="./article-peripheral.html">Abstract</a><a class="mini-link mini-link--pdf" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11675/9421">PDF</a></div></article>
+        <article class="article-row"><span class="article-row__num">02</span><div><div class="article-row__meta"><span>Research article</span><span>pp. 21–40</span></div><h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721">Technoscientific Rationality</a></h3><p class="article-row__subtitle">Navigating Dilemmas in the Contemporary Zeitgeist</p><p class="article-row__authors">Nebiyou Ermias</p></div><div class="article-row__actions"><a class="mini-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721">Abstract</a><a class="mini-link mini-link--pdf" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721/9422">PDF</a></div></article>
+        <article class="article-row"><span class="article-row__num">03</span><div><div class="article-row__meta"><span>Research article</span><span>pp. 41–63</span></div><h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697">Indigenous Values, Beliefs, and Systems for Peacebuilding</a></h3><p class="article-row__subtitle">The Jarssaa Gurachaa institution in south-central Ethiopia</p><p class="article-row__authors">Daniel Mekonnen</p></div><div class="article-row__actions"><a class="mini-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697">Abstract</a><a class="mini-link mini-link--pdf" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697/9423">PDF</a></div></article>
       </div>
-    </section>
+    </div></section>
 
-    <section class="journal-strip" aria-label="Journal information">
-      <div class="shell journal-strip__grid">
-        <div><span data-i18n="publisher">Publisher</span><strong>College of Social Sciences</strong></div>
-        <div><span data-i18n="frequency">Frequency</span><strong data-i18n="biannual">Biannual</strong></div>
-        <div><span data-i18n="language">Language</span><strong>English</strong></div>
-        <div><span data-i18n="access">Access</span><strong data-i18n="openFree">Open &amp; free</strong></div>
-        <a class="index-badge" href="https://doaj.org/toc/2520-582X" rel="external" aria-label="View EJOSSAH in DOAJ"><span>Indexed in</span><strong>DOAJ</strong></a>
-      </div>
-    </section>
+    <section class="section"><div class="shell"><header class="section-heading"><div><p class="eyebrow">Announcements</p><h2>Calls, deadlines and journal news</h2></div><a class="text-link" href="./announcements.html">All announcements →</a></header><article class="announcement-feature"><div class="announcement-feature__date"><strong>19</strong><span>May 2025</span></div><div class="announcement-feature__body"><p class="eyebrow">Special Issue</p><h2><a href="./announcement-abcd.html">Asset-based and community-led development in Ethiopia</a></h2><p>EJOSSAH invited academic papers and reflections on practice, with guest editors Wassie Kebede and Wellington Sousa. The complete archived call includes both abstract streams, submission requirements and Q&amp;A information.</p><a class="text-link" href="./announcement-abcd.html">Read the complete announcement →</a></div></article></div></section>
 
-    <section class="current-issue section" id="current" aria-labelledby="current-title">
-      <div class="shell">
-        <header class="section-heading">
-          <div>
-            <p class="kicker" data-i18n="currentKicker">Current issue</p>
-            <h2 id="current-title">Vol. 21 No. 2 (2025): December</h2>
-            <p><span data-i18n="published">Published</span> 20 July 2026 · 108 pages · 5 articles</p>
-          </div>
-          <label class="article-search">
-            <span class="sr-only">Search this issue</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-            <input id="articleSearch" type="search" placeholder="Search this issue" autocomplete="off" data-i18n-placeholder="searchIssue">
-          </label>
-        </header>
-
-        <div class="issue-layout">
-          <div class="article-list" id="articleList">
-            <article class="article-card reveal" data-search="peripheral center seeking nationalisms center periphery ethiopia somali oromo dawit biazen demesse politics">
-              <div class="article-card__number">01</div>
-              <div class="article-card__body">
-                <div class="article-card__meta"><span>Research article</span><span>pp. 1–19</span></div>
-                <h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11675">Peripheral vs. Center-Seeking Nationalisms and Center-Periphery Relations in Ethiopia</a></h3>
-                <p class="article-card__subtitle">Post-1991 Somali-Oromo Relations</p>
-                <p class="article-card__authors">Dawit Biazen Demesse</p>
-              </div>
-              <div class="article-card__actions">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11675" data-i18n="abstract">Abstract</a>
-                <a class="pdf-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11675/9421">PDF <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="article-card reveal" data-search="technoscientific rationality dilemmas contemporary zeitgeist nebiyou ermias philosophy technology">
-              <div class="article-card__number">02</div>
-              <div class="article-card__body">
-                <div class="article-card__meta"><span>Research article</span><span>pp. 21–40</span></div>
-                <h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721">Technoscientific Rationality</a></h3>
-                <p class="article-card__subtitle">Navigating Dilemmas in the Contemporary Zeitgeist</p>
-                <p class="article-card__authors">Nebiyou Ermias</p>
-              </div>
-              <div class="article-card__actions">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721" data-i18n="abstract">Abstract</a>
-                <a class="pdf-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11721/9422">PDF <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="article-card reveal" data-search="indigenous values beliefs systems peacebuilding jarssaa gurachaa institution ethiopia daniel mekonnen peace">
-              <div class="article-card__number">03</div>
-              <div class="article-card__body">
-                <div class="article-card__meta"><span>Research article</span><span>pp. 41–63</span></div>
-                <h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697">Indigenous Values, Beliefs, and Systems for Peacebuilding</a></h3>
-                <p class="article-card__subtitle">The Case of the Jarssaa Gurachaa Inter-Ethnic Indigenous Institution in South-Central Ethiopia</p>
-                <p class="article-card__authors">Daniel Mekonnen</p>
-              </div>
-              <div class="article-card__actions">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697" data-i18n="abstract">Abstract</a>
-                <a class="pdf-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11697/9423">PDF <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="article-card reveal" data-search="divorce aftermath resilience lived experiences divorced custodial young women adama ethiopia girma megerssa judith globerman debebe ero sociology gender">
-              <div class="article-card__number">04</div>
-              <div class="article-card__body">
-                <div class="article-card__meta"><span>Research article</span><span>pp. 65–84</span></div>
-                <h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11714">Divorce Aftermath through the Lens of Resilience</a></h3>
-                <p class="article-card__subtitle">Lived Experiences of Divorced Custodial, Young Women in Adama, Ethiopia</p>
-                <p class="article-card__authors">Girma Megerssa, Judith Globerman, Debebe Ero</p>
-              </div>
-              <div class="article-card__actions">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11714" data-i18n="abstract">Abstract</a>
-                <a class="pdf-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11714/9424">PDF <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <article class="article-card reveal" data-search="archaeological semiotics material cultures gadaa ritual performances borana shewa ethiopia garedow abiba worku derara alfredo gonzalez ruibal archaeology">
-              <div class="article-card__number">05</div>
-              <div class="article-card__body">
-                <div class="article-card__meta"><span>Research article</span><span>pp. 85–108</span></div>
-                <h3><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11729">Archaeological Semiotics of Material Cultures of Gadaa Ritual Performances in Borana and Shewa Zones, Ethiopia</a></h3>
-                <p class="article-card__authors">Garedow Abiba, Worku Derara, Alfredo González-Ruibal</p>
-              </div>
-              <div class="article-card__actions">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11729" data-i18n="abstract">Abstract</a>
-                <a class="pdf-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/article/view/11729/9425">PDF <span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-
-            <p class="no-results" id="noResults" hidden data-i18n="noResults">No articles match your search.</p>
-          </div>
-
-          <aside class="issue-sidebar" aria-label="Issue tools">
-            <div class="sidebar-card sidebar-card--accent">
-              <p class="kicker" data-i18n="forAuthors">For authors</p>
-              <h3 data-i18n="shareResearch">Share your research with EJOSSAH.</h3>
-              <p data-i18n="submissionCopy">Review the editorial requirements before beginning a new submission.</p>
-              <a class="button button--light button--full" href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions" data-i18n="submissionGuide">Submission guidelines</a>
-            </div>
-
-            <div class="sidebar-card">
-              <h3 data-i18n="journalInfo">Journal information</h3>
-              <dl class="fact-list">
-                <div><dt>E-ISSN</dt><dd>2520-582X</dd></div>
-                <div><dt data-i18n="frequency">Frequency</dt><dd data-i18n="biannual">Biannual</dd></div>
-                <div><dt>APC</dt><dd data-i18n="free">Free</dd></div>
-                <div><dt data-i18n="firstPublished">First published</dt><dd>2003</dd></div>
-              </dl>
-              <a class="arrow-link" href="https://ejol.aau.edu.et/index.php/EJOSSAH/about" data-i18n="aboutJournal">About the journal <span aria-hidden="true">→</span></a>
-            </div>
-
-            <div class="sidebar-card sidebar-card--compact">
-              <h3 data-i18n="stayCurrent">Stay current</h3>
-              <div class="feed-links">
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/gateway/plugin/WebFeedGatewayPlugin/atom">Atom</a>
-                <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/gateway/plugin/WebFeedGatewayPlugin/rss2">RSS 2.0</a>
-              </div>
-            </div>
-          </aside>
-        </div>
-
-        <div class="issue-footer">
-          <a class="arrow-link arrow-link--large" href="https://ejol.aau.edu.et/index.php/EJOSSAH/issue/archive" data-i18n="browseArchive">Browse all issues <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section section" id="about" aria-labelledby="about-title">
-      <div class="shell about-grid">
-        <div class="about-copy reveal">
-          <p class="kicker kicker--gold" data-i18n="aboutKicker">About EJOSSAH</p>
-          <h2 id="about-title" data-i18n="aboutTitle">A meeting place for rigorous social inquiry and humanistic thought.</h2>
-          <p data-i18n="aboutCopy">EJOSSAH provides an academic platform for research in the social sciences and humanities, connecting scholarship on Ethiopia with regional and global conversations.</p>
-          <div class="about-links">
-            <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/editorial_policy" data-i18n="editorialPolicy">Editorial policy <span aria-hidden="true">↗</span></a>
-            <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/editorialTeam" data-i18n="editorialTeam">Editorial team <span aria-hidden="true">↗</span></a>
-            <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/author_guide" data-i18n="authorGuide">Author guidelines <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="about-quote reveal reveal--delay">
-          <span class="quote-mark" aria-hidden="true">“</span>
-          <blockquote data-i18n="quote">Knowledge grows when disciplines meet, evidence is tested, and ideas remain open to critical conversation.</blockquote>
-          <p>— EJOSSAH editorial principle</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="workflow section" aria-labelledby="workflow-title">
-      <div class="shell">
-        <header class="section-heading section-heading--center">
-          <div>
-            <p class="kicker" data-i18n="workflowKicker">Publishing with EJOSSAH</p>
-            <h2 id="workflow-title" data-i18n="workflowTitle">A clear path from manuscript to publication</h2>
-          </div>
-        </header>
-        <ol class="workflow-grid">
-          <li><span>01</span><h3 data-i18n="stepSubmit">Submit</h3><p data-i18n="stepSubmitCopy">Prepare the manuscript and required metadata in OJS.</p></li>
-          <li><span>02</span><h3 data-i18n="stepReview">Editorial review</h3><p data-i18n="stepReviewCopy">Scope, integrity and scholarly quality are assessed.</p></li>
-          <li><span>03</span><h3 data-i18n="stepRefine">Refine</h3><p data-i18n="stepRefineCopy">Authors respond to feedback and prepare the final text.</p></li>
-          <li><span>04</span><h3 data-i18n="stepPublish">Publish</h3><p data-i18n="stepPublishCopy">The article joins an openly accessible issue and archive.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="cta-section">
-      <div class="shell cta-section__inner">
-        <div>
-          <p class="kicker kicker--gold" data-i18n="nextContribution">Your next contribution</p>
-          <h2 data-i18n="ctaTitle">Bring a consequential question to a wider scholarly conversation.</h2>
-        </div>
-        <a class="button button--light" href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions" data-i18n="startSubmission">Start a submission</a>
-      </div>
-    </section>
+    <section class="section section--soft"><div class="shell"><p class="eyebrow">Publication profile</p><div class="profile-grid"><div><span>Published since</span><strong>2003</strong></div><div><span>Journal identifiers</span><strong>eISSN 2520-582X<br>ISSN 1810-4487</strong></div><div><span>Peer review</span><strong>Double-blind</strong></div><div><span>Indexed in</span><strong>EJOL · AJOL · DOAJ</strong></div></div></div></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div class="footer-brand">
-        <img src="./plugins/themes/ejossah/assets/ejossah-mark.svg" width="70" height="70" alt="">
-        <div><strong>EJOSSAH</strong><span>College of Social Sciences<br>Addis Ababa University</span></div>
-      </div>
-      <div>
-        <h2 data-i18n="explore">Explore</h2>
-        <a href="#current" data-i18n="navCurrent">Current issue</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/issue/archive" data-i18n="navArchive">Archives</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/announcement" data-i18n="navNews">Announcements</a>
-      </div>
-      <div>
-        <h2 data-i18n="policies">Policies</h2>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/editorial_policy" data-i18n="editorialPolicy">Editorial policy</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/privacy" data-i18n="privacy">Privacy statement</a>
-        <a href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/contact" data-i18n="contact">Contact</a>
-      </div>
-      <div>
-        <h2 data-i18n="platform">Platform</h2>
-        <a href="https://github.com/Base27-CVNSS/ojs">Open source</a>
-        <a href="https://pkp.sfu.ca/software/ojs/">Open Journal Systems 3.6</a>
-        <a href="https://doaj.org/toc/2520-582X">DOAJ</a>
-      </div>
-    </div>
-    <div class="shell footer-bottom">
-      <p>© <span id="currentYear">2026</span> EJOSSAH. Journal content remains subject to its stated publication terms.</p>
-      <p>Academic publishing powered by OJS · Page interface by Base27-CVNSS</p>
-    </div>
-  </footer>
-
-  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 15 6-6 6 6"/></svg>
-  </button>
-
+  <footer class="site-footer"><div class="shell footer-grid"><div><h2>Ethiopian Journal of the Social Sciences and Humanities</h2><p>College of Social Sciences, Addis Ababa University. Open scholarship for Ethiopia, the Horn of Africa and wider academic communities.</p></div><div><h3>Explore</h3><nav class="footer-links"><a href="./current.html">Current issue</a><a href="./archives.html">Archives</a><a href="./announcements.html">Announcements</a><a href="./about.html">About EJOSSAH</a></nav></div><div><h3>For authors</h3><nav class="footer-links"><a href="./about.html#author-guidelines">Author guidelines</a><a href="./about.html#editorial-policy">Editorial policy</a><a href="https://ejol.aau.edu.et/index.php/EJOSSAH/about/submissions">Submit through OJS</a><a href="./about.html#contact">Contact</a></nav></div></div><div class="shell footer-bottom"><span>© <span data-current-year>2026</span> College of Social Sciences, Addis Ababa University</span><span>Powered by Open Journal Systems 3.6 · EJOSSAH theme</span></div></footer>
   <script src="./docs/assets/ejossah-page.js" defer></script>
 </body>
 </html>

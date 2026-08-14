@@ -1,14 +1,14 @@
 :root {
-    --ej-accent: #7b1f2d;
-    --ej-accent-dark: color-mix(in srgb, var(--ej-accent) 78%, #16070a);
-    --ej-gold: #b88724;
-    --ej-ink: #1f2933;
-    --ej-muted: #5e6874;
-    --ej-paper: #fffefa;
-    --ej-canvas: #f4f1ea;
-    --ej-line: #ded8ca;
-    --ej-radius: 0.8rem;
-    --ej-shadow: 0 18px 45px rgb(31 41 51 / 10%);
+    --ej-accent: #116b48;
+    --ej-accent-dark: #073b29;
+    --ej-gold: #2f9e67;
+    --ej-ink: #17211b;
+    --ej-muted: #5e6b63;
+    --ej-paper: #fff;
+    --ej-canvas: #f7f9f7;
+    --ej-line: #d9e3dc;
+    --ej-radius: 0.2rem;
+    --ej-shadow: 0 16px 38px rgb(7 59 41 / 8%);
     --ej-serif: Georgia, "Times New Roman", serif;
     --ej-sans: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -112,12 +112,11 @@ a:focus-visible {
     gap: clamp(2rem, 5vw, 4.5rem);
     overflow: hidden;
     padding: clamp(2rem, 5vw, 4.75rem);
-    border-radius: calc(var(--ej-radius) * 1.5);
-    background:
-        radial-gradient(circle at 88% 10%, rgb(199 154 57 / 28%), transparent 35%),
-        linear-gradient(135deg, var(--ej-accent-dark), var(--ej-accent));
-    box-shadow: var(--ej-shadow);
-    color: #fff;
+    border: 1px solid var(--ej-line);
+    border-radius: var(--ej-radius);
+    background: linear-gradient(90deg, #fff 0 72%, #f3f9f5 72%);
+    box-shadow: none;
+    color: var(--ej-ink);
 }
 
 .ejossah_hero::after {
@@ -127,15 +126,15 @@ a:focus-visible {
     bottom: -8rem;
     width: 22rem;
     height: 22rem;
-    border: 1px solid rgb(255 255 255 / 18%);
+    border: 1px solid rgb(17 107 72 / 12%);
     border-radius: 50%;
-    box-shadow: 0 0 0 3rem rgb(255 255 255 / 4%), 0 0 0 6rem rgb(255 255 255 / 3%);
+    box-shadow: 0 0 0 3rem rgb(17 107 72 / 3%), 0 0 0 6rem rgb(17 107 72 / 2%);
     content: "";
 }
 
 .ejossah_hero__kicker {
     margin: 0 0 0.9rem;
-    color: #f2d58f;
+    color: var(--ej-accent);
     font-size: 0.76rem;
     font-weight: 800;
     letter-spacing: 0.16em;
@@ -145,7 +144,7 @@ a:focus-visible {
 .ejossah_hero h2 {
     max-width: 760px;
     margin: 0;
-    color: #fff;
+    color: var(--ej-accent);
     font-family: var(--ej-serif);
     font-size: clamp(2rem, 4.5vw, 3.8rem);
     line-height: 1.07;
@@ -155,7 +154,7 @@ a:focus-visible {
 .ejossah_hero__tagline {
     max-width: 650px;
     margin: 1.2rem 0 0;
-    color: rgb(255 255 255 / 86%);
+    color: var(--ej-muted);
     font-size: clamp(1rem, 1.8vw, 1.18rem);
 }
 
@@ -183,16 +182,16 @@ a:focus-visible {
 .ejossah_button--primary,
 .ejossah_button--primary:hover,
 .ejossah_button--primary:focus-visible {
-    background: #fff;
-    color: var(--ej-accent-dark);
+    background: var(--ej-accent);
+    color: #fff;
 }
 
 .ejossah_button--ghost,
 .ejossah_button--ghost:hover,
 .ejossah_button--ghost:focus-visible {
-    border-color: rgb(255 255 255 / 55%);
-    background: rgb(255 255 255 / 7%);
-    color: #fff;
+    border-color: var(--ej-accent);
+    background: #fff;
+    color: var(--ej-accent);
 }
 
 .ejossah_hero__identity {
@@ -200,11 +199,12 @@ a:focus-visible {
     display: grid;
     justify-items: center;
     padding: 1.25rem;
-    border: 1px solid rgb(255 255 255 / 28%);
-    border-radius: 50% 50% 46% 54% / 45% 48% 52% 55%;
-    background: rgb(255 255 255 / 8%);
+    border: 1px solid var(--ej-accent);
+    border-radius: var(--ej-radius);
+    background: var(--ej-accent);
+    color: #fff;
     text-align: center;
-    transform: rotate(2deg);
+    transform: none;
 }
 
 .ejossah_hero__monogram {
@@ -216,14 +216,14 @@ a:focus-visible {
 
 .ejossah_hero__acronym {
     margin-top: 0.8rem;
-    color: #f2d58f;
+    color: #dff1e4;
     font-weight: 900;
     letter-spacing: 0.18em;
 }
 
 .ejossah_hero__issn {
     margin-top: 0.3rem;
-    color: rgb(255 255 255 / 72%);
+    color: rgb(255 255 255 / 78%);
     font-size: 0.72rem;
     letter-spacing: 0.08em;
 }
@@ -466,7 +466,7 @@ textarea {
 }
 
 .pkp_structure_footer a {
-    color: #f2d58f;
+    color: #dff1e4;
 }
 
 @media (max-width: 992px) {

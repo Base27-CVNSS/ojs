@@ -37,7 +37,7 @@ msgid "plugins.themes.ejossah.hero.title"
 msgstr "Ethiopian Journal of the Social Sciences and Humanities"
 
 msgid "plugins.themes.ejossah.hero.tagline"
-msgstr "Research and critical perspectives across Ethiopia, Africa and the wider world."
+msgstr "Fresh empirical and analytical research on Ethiopia and the Horn of Africa."
 
 msgid "plugins.themes.ejossah.hero.currentIssue"
 msgstr "Read the current issue"
@@ -55,7 +55,7 @@ msgid "plugins.themes.ejossah.fact.frequency"
 msgstr "Frequency"
 
 msgid "plugins.themes.ejossah.fact.biannual"
-msgstr "Biannual"
+msgstr "Biannual: June and December"
 
 msgid "plugins.themes.ejossah.fact.apc"
 msgstr "Article fee"

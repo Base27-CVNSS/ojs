@@ -37,7 +37,7 @@ msgid "plugins.themes.ejossah.hero.title"
 msgstr "Tạp chí Khoa học Xã hội và Nhân văn Ethiopia"
 
 msgid "plugins.themes.ejossah.hero.tagline"
-msgstr "Nghiên cứu và góc nhìn phản biện về Ethiopia, châu Phi và thế giới."
+msgstr "Nghiên cứu thực chứng và phân tích mới về Ethiopia và vùng Sừng châu Phi."
 
 msgid "plugins.themes.ejossah.hero.currentIssue"
 msgstr "Đọc số hiện tại"
@@ -55,7 +55,7 @@ msgid "plugins.themes.ejossah.fact.frequency"
 msgstr "Tần suất"
 
 msgid "plugins.themes.ejossah.fact.biannual"
-msgstr "Hai số mỗi năm"
+msgstr "Hai số mỗi năm: tháng Sáu và tháng Mười Hai"
 
 msgid "plugins.themes.ejossah.fact.apc"
 msgstr "Phí bài báo"
