@@ -61,7 +61,6 @@ a:hover, a:focus-visible { color: var(--ej-ink); text-decoration-color: var(--ej
 .obj_article_summary .subtitle { display: block; margin-top: .35rem; color: var(--ej-muted); font-size: .43em; font-weight: 450; line-height: 1.45; letter-spacing: 0; }
 .obj_article_summary .meta { display: flex; gap: 1rem; margin: 0 0 .55rem; color: var(--ej-muted); font-size: .88rem; }
 .obj_article_summary .authors { color: var(--ej-ink); font-weight: 620; }
-.obj_article_summary .pages::before { content: "· "; }
 .obj_article_summary .ejossah_doi { display: inline-block; margin-bottom: 2.25rem; color: var(--ej-muted); font-size: .78rem; }
 .obj_article_summary .ejossah_field_label { margin: 0 0 .55rem; color: var(--ej-faint); font-size: .64rem; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
 .obj_article_summary .ejossah_abstract { max-width: 780px; margin-bottom: 1.4rem; color: #30302e; font-size: .98rem; line-height: 1.8; }
@@ -90,7 +89,6 @@ a:hover, a:focus-visible { color: var(--ej-ink); text-decoration-color: var(--ej
     .ejossah_issue_header { grid-template-columns: 1fr; gap: 2.2rem; }
     .pkp_structure_content { padding-block: 1.5rem 4rem; }
     .obj_article_summary .meta { display: block; }
-    .obj_article_summary .pages::before { content: ""; }
 }
 
 @media (prefers-reduced-motion: reduce) {

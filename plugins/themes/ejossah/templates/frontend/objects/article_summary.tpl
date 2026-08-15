@@ -26,9 +26,6 @@
 		{if $publication->getData('authors')}
 			<span class="authors">{$publication->getAuthorString()|escape}</span>
 		{/if}
-		{if $publication->getData('pages')}
-			<span class="pages">{$publication->getData('pages')|escape}</span>
-		{/if}
 	</div>
 
 	{if $doiObject}
