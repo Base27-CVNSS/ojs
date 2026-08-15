@@ -10,8 +10,8 @@
     current: 'Current Issue',
     archives: 'Archives',
     guidelines: 'Guidelines',
-    'author-guideline': 'Author Guideline',
-    'reviewer-guideline': 'Reviewers Guideline',
+    'author-guideline': 'Author Guidelines',
+    'reviewer-guideline': 'Reviewer Guidelines',
     'editorial-process': 'Editorial Process',
     submissions: 'Submissions',
     announcements: 'Announcements',
@@ -74,7 +74,7 @@
 
   document.querySelectorAll('[data-access]').forEach((button) => {
     button.addEventListener('click', () => {
-      if (dialogTitle) dialogTitle.textContent = `${button.dataset.access} access restricted`;
+      if (dialogTitle) dialogTitle.textContent = `${button.dataset.access} — restricted`;
       if (typeof dialog?.showModal === 'function') dialog.showModal();
     });
   });

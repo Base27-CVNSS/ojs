@@ -12,7 +12,7 @@
 | Print ISSN hiển thị | 2409-6385 |
 | Ngôn ngữ | English |
 | Tần suất | Biannual — two selected issues per year |
-| Truy cập | 100% open access; APC free |
+| Truy cập | 100% open access; no APC |
 | Phản biện | Double-blind; at least two independent reviewers |
 | Trích dẫn | APA 7th edition |
 
@@ -20,7 +20,7 @@
 
 Tạo menu chính theo thứ tự: **Home, Current, Archives, Guidelines, Submissions, Announcements, About, Contact**.
 
-- Trong **Guidelines**, tạo ba mục con: **Author Guideline, Reviewers Guideline, Editorial Process**.
+- Trong **Guidelines**, tạo ba mục con: **Author Guidelines, Reviewer Guidelines, Editorial Process**.
 - Trong **About**, tạo ba mục con: **About the Journal, Editorial Team, Privacy Statement**.
 - Không nhập email cá nhân, số điện thoại hoặc liên kết hồ sơ của thành viên biên tập.
 - Chỉ bật locale tiếng Anh cho giao diện xuất bản của tạp chí.
