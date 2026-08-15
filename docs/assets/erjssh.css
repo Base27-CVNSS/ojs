@@ -77,6 +77,12 @@ button { cursor: pointer; }
 .journal-facts div:nth-child(even) { padding-left: 1.25rem; border-left: 1px solid var(--line); }
 .journal-facts dt { margin-bottom: .05rem; color: var(--muted); font-size: 11px; }
 .journal-facts dd { margin: 0; font-size: 12px; font-weight: 700; }
+.journal-overview { display: grid; grid-template-columns: minmax(0, 1fr) 116px; gap: 1rem; align-items: stretch; max-width: 720px; margin: 0 0 1.1rem; }
+.journal-overview .journal-facts { margin: 0; }
+.sjr-card { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: .45rem; border: 1px solid var(--line); background: rgba(255,253,249,.86); color: var(--blue-800); text-decoration: none; }
+.sjr-card:hover { border-color: var(--blue-600); background: var(--paper); }
+.sjr-card img { width: 92px; height: 92px; object-fit: contain; }
+.sjr-card span { margin-top: .3rem; font-size: 9px; font-weight: 700; line-height: 1.25; text-align: center; }
 .foreign-policy { max-width: 720px; margin: 0; color: var(--muted); font-size: 11px; }
 .foreign-policy a { color: var(--blue-700); font-weight: 700; }
 .home-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 720px; margin-top: 1.4rem; border: 1px solid #cfcbc2; background: rgba(255,253,249,.82); }
@@ -250,8 +256,11 @@ button { cursor: pointer; }
   .hero__grid { grid-template-columns: minmax(190px, 230px) minmax(0, 1fr); gap: 3rem; padding-block: 1.5rem; }
   .hero h1 { margin-bottom: .7rem; font-size: 25px; }
   .hero__lead { margin-bottom: .85rem; line-height: 1.55; }
+  .journal-overview { grid-template-columns: minmax(0, 1fr) 96px; margin-bottom: .65rem; }
   .journal-facts { margin-bottom: .8rem; }
   .journal-facts div { padding-block: .42rem; }
+  .sjr-card img { width: 70px; height: 70px; }
+  .sjr-card span { font-size: 8px; }
   .home-actions { margin-top: .9rem; }
   .site-footer__grid { padding-block: .45rem; }
 }
@@ -289,6 +298,10 @@ button { cursor: pointer; }
   .hero h1 { font-size: 24px; }
   .journal-facts { grid-template-columns: 1fr; }
   .journal-facts div:nth-child(odd), .journal-facts div:nth-child(even) { padding-inline: 0; border-left: 0; }
+  .journal-overview { grid-template-columns: 1fr; }
+  .sjr-card { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: .9rem; justify-content: start; text-align: left; }
+  .sjr-card img { width: 70px; height: 70px; }
+  .sjr-card span { margin: 0; font-size: 10px; text-align: left; }
   .home-actions { grid-template-columns: 1fr; }
   .home-actions a { border-right: 0; border-bottom: 1px solid var(--line); }
   .home-actions a:last-child { border-bottom: 0; }
