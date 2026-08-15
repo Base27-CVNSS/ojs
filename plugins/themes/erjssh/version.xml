@@ -2,10 +2,10 @@
 <!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
 
 <version>
-	<application>ejossah</application>
+	<application>erjssh</application>
 	<type>plugins.themes</type>
-	<release>1.2.0.0</release>
-	<date>2026-08-14</date>
+	<release>1.0.0.0</release>
+	<date>2026-08-15</date>
 	<lazy-load>1</lazy-load>
-	<class>EjossahThemePlugin</class>
+	<class>ErjsshThemePlugin</class>
 </version>
