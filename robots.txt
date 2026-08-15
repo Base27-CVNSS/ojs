@@ -1,4 +1,4 @@
-# EJOSSAH article-first academic journal
+# ERJSSH academic journal
 User-agent: *
 Allow: /
 

@@ -1,9 +1,9 @@
 {
-  "name": "Ethiopian Journal of the Social Sciences and Humanities",
-  "short_name": "EJOSSAH",
+  "name": "Ethiopian Renaissance Journal of Social Sciences and Humanities",
+  "short_name": "ERJSSH",
   "start_url": "/ojs/",
   "display": "standalone",
-  "background_color": "#f7f7f5",
-  "theme_color": "#f7f7f5",
-  "description": "Article-first access to EJOSSAH titles, authors, abstracts, keywords and DOI links"
+  "background_color": "#f4f8fc",
+  "theme_color": "#0757a7",
+  "description": "Peer-reviewed social sciences and humanities scholarship from the University of Gondar"
 }
