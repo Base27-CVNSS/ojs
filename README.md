@@ -5,6 +5,7 @@ Mã nguồn tái tạo **Ethiopian Renaissance Journal of Social Sciences and Hu
 ## Thiết kế
 
 - Bố cục dựa trên giao diện ERJSSH được lưu trữ: thanh tài khoản/ISSN, masthead, menu xanh có mục con, ảnh bìa, current issue và các trang thông tin.
+- Bản GitHub Pages hoạt động như một cổng tạp chí theo route: mỗi mục menu mở một trang con trong cùng khung giao diện, có lịch sử URL riêng; trang Home được nén vừa màn hình desktop và nội dung dài cuộn bên trong vùng đọc.
 - Font sans-serif 11–12 px nhất quán, responsive và hỗ trợ thao tác bàn phím; chỉ tiêu đề bài báo dùng chữ hoa toàn bộ.
 - Danh sách bài tập trung vào tiêu đề, tác giả, DOI, tóm tắt, từ khóa, cách trích dẫn, số xuất bản và galley PDF.
 - Số hiện tại là **Vol. 13 No. 1 (2026)**; các số cũ hiển thị trạng thái yêu cầu đăng ký trực tiếp.

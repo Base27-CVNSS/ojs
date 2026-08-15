@@ -4,6 +4,27 @@
   const dialog = document.querySelector('[data-dialog]');
   const dialogTitle = document.querySelector('[data-dialog-title]');
   const dropdowns = [...document.querySelectorAll('.nav-dropdown')];
+  const panels = [...document.querySelectorAll('.page-panel')];
+  const routeTitles = {
+    home: 'Journal Home',
+    current: 'Current Issue',
+    archives: 'Archives',
+    guidelines: 'Guidelines',
+    'author-guideline': 'Author Guidelines',
+    'reviewer-guideline': 'Reviewer Guidelines',
+    'editorial-process': 'Editorial Process',
+    submissions: 'Submissions',
+    announcements: 'Announcements',
+    'about-journal': 'About the Journal',
+    'editorial-team': 'Editorial Team',
+    privacy: 'Privacy Statement',
+    contact: 'Contact'
+  };
+  const routeParents = {
+    'author-guideline': 'guidelines',
+    'reviewer-guideline': 'guidelines',
+    'editorial-process': 'guidelines'
+  };
 
   const closeDropdowns = (except = null) => {
     dropdowns.forEach((dropdown) => {
@@ -34,8 +55,6 @@
   menu?.addEventListener('click', (event) => {
     const link = event.target.closest('a');
     if (link) {
-      const target = link.hash ? document.querySelector(link.hash) : null;
-      if (target?.tagName === 'DETAILS') target.open = true;
       menu.dataset.open = 'false';
       toggle?.setAttribute('aria-expanded', 'false');
       closeDropdowns();
@@ -49,13 +68,13 @@
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
     closeDropdowns();
-    menu.dataset.open = 'false';
+    if (menu) menu.dataset.open = 'false';
     toggle?.setAttribute('aria-expanded', 'false');
   });
 
   document.querySelectorAll('[data-access]').forEach((button) => {
     button.addEventListener('click', () => {
-      if (dialogTitle) dialogTitle.textContent = `${button.dataset.access} access restricted`;
+      if (dialogTitle) dialogTitle.textContent = `${button.dataset.access} — restricted`;
       if (typeof dialog?.showModal === 'function') dialog.showModal();
     });
   });
@@ -68,15 +87,58 @@
     if (event.target === dialog) dialog.close();
   });
 
-  const navLinks = [...document.querySelectorAll('.nav-links > a')];
-  const sections = navLinks.map((link) => document.querySelector(link.hash)).filter(Boolean);
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((link) => link.toggleAttribute('aria-current', link.hash === `#${entry.target.id}`));
+  panels.filter((panel) => panel.id !== 'home').forEach((panel) => {
+    const container = panel.querySelector(':scope > .container');
+    if (!container || container.querySelector(':scope > .view-bar')) return;
+    const bar = document.createElement('div');
+    bar.className = 'view-bar';
+    bar.innerHTML = '<a href="#home"><span aria-hidden="true">←</span> Journal Home</a><span aria-hidden="true">/</span><strong data-view-title></strong>';
+    container.prepend(bar);
+  });
+
+  const allRouteLinks = [...document.querySelectorAll('a[href^="#"]')];
+  const guidelineDetails = [...document.querySelectorAll('#guidelines .accordion-list > details')];
+
+  const renderRoute = () => {
+    const requested = decodeURIComponent(location.hash.slice(1)) || 'home';
+    const route = routeTitles[requested] ? requested : 'home';
+    const panelId = routeParents[route] || route;
+    const activePanel = panels.find((panel) => panel.dataset.route === panelId) || document.querySelector('#home');
+
+    panels.forEach((panel) => {
+      const active = panel === activePanel;
+      panel.hidden = !active;
+      panel.toggleAttribute('aria-hidden', !active);
+    });
+
+    if (panelId === 'guidelines') {
+      const selectedDetail = routeParents[route] ? route : null;
+      guidelineDetails.forEach((detail) => {
+        detail.hidden = Boolean(selectedDetail && detail.id !== selectedDetail);
+        detail.open = detail.id === selectedDetail;
       });
-    }, { rootMargin: '-30% 0px -60%', threshold: 0 });
-    sections.forEach((section) => observer.observe(section));
-  }
+    }
+
+    const title = routeTitles[route];
+    activePanel.querySelector('[data-view-title]')?.replaceChildren(title);
+    activePanel.scrollTop = 0;
+    document.body.dataset.route = route;
+    document.title = route === 'home'
+      ? 'ERJSSH — Ethiopian Renaissance Journal of Social Sciences and Humanities'
+      : `${title} — ERJSSH`;
+
+    allRouteLinks.forEach((link) => {
+      const linkRoute = decodeURIComponent(link.hash.slice(1));
+      link.toggleAttribute('aria-current', linkRoute === route || (linkRoute === panelId && routeParents[route] === panelId));
+    });
+    dropdowns.forEach((dropdown) => {
+      const current = Boolean(dropdown.querySelector(`a[href="#${CSS.escape(route)}"]`));
+      dropdown.classList.toggle('is-current', current);
+    });
+
+    if (window.matchMedia('(max-width: 760px)').matches) window.scrollTo({ top: 0, behavior: 'auto' });
+  };
+
+  window.addEventListener('hashchange', renderRoute);
+  renderRoute();
 })();

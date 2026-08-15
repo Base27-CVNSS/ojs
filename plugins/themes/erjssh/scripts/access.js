@@ -1,5 +1,5 @@
 (() => {
-  const message = 'Direct registration is currently required. You do not have permission to access this area at present. Any access information granted previously remains preserved.';
+  const message = 'Access is managed by the journal. Existing permissions remain unchanged.';
   const selectors = [
     '.pkp_navigation_user a[href*="/login"]',
     '.pkp_navigation_user a[href*="/register"]',
@@ -10,7 +10,7 @@
   const dialog = document.createElement('dialog');
   dialog.className = 'erjssh_access_dialog';
   dialog.setAttribute('aria-labelledby', 'erjssh-access-title');
-  dialog.innerHTML = '<button class="erjssh_dialog_close" type="button" aria-label="Close">×</button><p class="erjssh_label">Restricted journal service</p><h2 id="erjssh-access-title">Access restricted</h2><p></p><button class="erjssh_dialog_confirm" type="button">Understood</button>';
+  dialog.innerHTML = '<button class="erjssh_dialog_close" type="button" aria-label="Close">×</button><p class="erjssh_label">Journal access</p><h2 id="erjssh-access-title">Access restricted</h2><p></p><button class="erjssh_dialog_confirm" type="button">Close</button>';
   dialog.querySelector('p:not(.erjssh_label)').textContent = message;
   document.body.append(dialog);
 
@@ -28,7 +28,8 @@
   document.querySelectorAll(selectors.join(',')).forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      open();
+      const label = link.textContent.trim() || 'Access';
+      open(`${label} — restricted`);
     });
   });
 
@@ -39,11 +40,11 @@
     if (!link) return;
     const badge = document.createElement('span');
     badge.className = 'erjssh_lock_badge';
-    badge.textContent = 'Direct registration required';
+    badge.textContent = 'Registration required';
     issue.append(badge);
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      open(`${link.textContent.trim()} access restricted`);
+      open(`${link.textContent.trim()} — restricted`);
     });
   });
 })();
