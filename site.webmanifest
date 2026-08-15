@@ -3,7 +3,7 @@
   "short_name": "EJOSSAH",
   "start_url": "/ojs/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#116b48",
-  "description": "Open-access social sciences and humanities scholarship on Ethiopia and the Horn of Africa"
+  "background_color": "#f7f7f5",
+  "theme_color": "#f7f7f5",
+  "description": "Article-first access to EJOSSAH titles, authors, abstracts, keywords and DOI links"
 }
