@@ -17,7 +17,7 @@ use PKP\plugins\ThemePlugin;
 
 class EjossahThemePlugin extends ThemePlugin
 {
-    private const DEFAULT_ACCENT = '#7B1F2D';
+    private const DEFAULT_ACCENT = '#151515';
 
     /**
      * Register the parent theme, assets and appearance options.
@@ -32,18 +32,6 @@ class EjossahThemePlugin extends ThemePlugin
             'default' => self::DEFAULT_ACCENT,
         ]);
 
-        $this->addOption('showEjossahHero', 'FieldOptions', [
-            'label' => __('plugins.themes.ejossah.option.showHero.label'),
-            'description' => __('plugins.themes.ejossah.option.showHero.description'),
-            'options' => [
-                [
-                    'value' => true,
-                    'label' => __('plugins.themes.ejossah.option.showHero.option'),
-                ],
-            ],
-            'default' => true,
-        ]);
-
         $accentColour = $this->normaliseAccentColour($this->getOption('accentColour'));
 
         $this->addStyle('ejossah', 'styles/index.css');
@@ -53,13 +41,6 @@ class EjossahThemePlugin extends ThemePlugin
             ['inline' => true]
         );
 
-        if (!$this->getOption('showEjossahHero')) {
-            $this->addStyle(
-                'ejossahHideHero',
-                '.ejossah_hero{display:none!important;}',
-                ['inline' => true]
-            );
-        }
     }
 
     /**

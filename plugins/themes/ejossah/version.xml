@@ -4,7 +4,7 @@
 <version>
 	<application>ejossah</application>
 	<type>plugins.themes</type>
-	<release>1.1.0.0</release>
+	<release>1.2.0.0</release>
 	<date>2026-08-14</date>
 	<lazy-load>1</lazy-load>
 	<class>EjossahThemePlugin</class>
