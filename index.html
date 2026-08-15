@@ -68,8 +68,8 @@
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="hero section-anchor" id="home">
+  <main class="journal-app" id="main-content" aria-live="polite">
+    <section class="hero section-anchor page-panel" id="home" data-route="home">
       <div class="container hero__grid">
         <figure class="journal-cover"><img src="./docs/assets/erjssh-cover.webp" alt="ERJSSH journal cover" width="1054" height="1492"></figure>
         <div class="hero__content">
@@ -83,11 +83,16 @@
             <div><dt>Peer review</dt><dd>Double-blind; two independent reviewers</dd></div>
           </dl>
           <p class="foreign-policy">Article capacity may vary by issue; editorial quality remains the primary criterion. International authors are covered by a separate policy. Please contact the <a href="https://base27-cvnss.github.io/ojs/#home">ERJSSH Editorial Office</a>.</p>
+          <nav class="home-actions" aria-label="Quick journal access">
+            <a class="home-actions__primary" href="#current"><span aria-hidden="true">→</span><strong>Read the current issue</strong><small>Vol. 13 No. 1 (2026)</small></a>
+            <a href="#archives"><span aria-hidden="true">▤</span><strong>Browse archives</strong><small>Journal record</small></a>
+            <a href="#author-guideline"><span aria-hidden="true">◇</span><strong>Author guideline</strong><small>Prepare a manuscript</small></a>
+          </nav>
         </div>
       </div>
     </section>
 
-    <section class="journal-section section-anchor" id="current">
+    <section class="journal-section section-anchor page-panel" id="current" data-route="current" hidden>
       <div class="container">
         <header class="section-heading">
           <div><p class="eyebrow">Current issue</p><h2>Vol. 13 No. 1 (2026)</h2></div>
@@ -188,7 +193,7 @@
       </div>
     </section>
 
-    <section class="journal-section journal-section--tint section-anchor" id="archives">
+    <section class="journal-section journal-section--tint section-anchor page-panel" id="archives" data-route="archives" hidden>
       <div class="container narrow">
         <header class="section-heading section-heading--simple"><div><p class="eyebrow">Journal record</p><h2>Archives</h2></div><p class="section-note">The current issue is open. Direct registration is required for earlier volumes.</p></header>
         <article class="archive-current"><div><span class="status-icon" aria-hidden="true">✓</span><div><h3>Vol. 13 No. 1 (2026)</h3><p>Current issue · 10 articles · Open access</p></div></div><a href="#current">View articles</a></article>
@@ -211,13 +216,12 @@
       </div>
     </section>
 
-    <section class="journal-section section-anchor" id="guidelines">
+    <section class="journal-section section-anchor page-panel" id="guidelines" data-route="guidelines" hidden>
       <div class="container reading-layout">
         <header class="section-heading section-heading--simple"><div><p class="eyebrow">For contributors</p><h2>Guidelines</h2></div><p class="section-note">Use the Guidelines menu to open each section.</p></header>
         <div class="policy-strip">
           <div><span aria-hidden="true">○</span><strong>APC</strong><p>Free of charge</p></div>
           <div><span aria-hidden="true">◉</span><strong>Access</strong><p>100% open access</p></div>
-          <div><span aria-hidden="true">◇</span><strong>Frequency</strong><p>Two issues per year</p></div>
           <div><span aria-hidden="true">✓</span><strong>Review</strong><p>Two independent reviewers</p></div>
         </div>
         <div class="accordion-list">
@@ -228,14 +232,14 @@
       </div>
     </section>
 
-    <section class="journal-section journal-section--blue section-anchor" id="submissions">
+    <section class="journal-section journal-section--blue section-anchor page-panel" id="submissions" data-route="submissions" hidden>
       <div class="container submissions-grid">
         <div><p class="eyebrow">Submit to ERJSSH</p><h2>Submissions</h2><p>Submission and publication are free. Prepare an anonymized manuscript, a complete author version, an abstract, keywords and all required ethics or permission documents.</p></div>
         <div class="submission-panel"><p class="submission-panel__label">Access status</p><h3>Direct registration is required</h3><p>Account creation and manuscript submission are restricted to users approved directly by the journal. Previously granted access information remains preserved.</p><button class="light-button" type="button" data-access="Submission">Request submission access</button></div>
       </div>
     </section>
 
-    <section class="journal-section section-anchor" id="announcements">
+    <section class="journal-section section-anchor page-panel" id="announcements" data-route="announcements" hidden>
       <div class="container narrow">
         <header class="section-heading section-heading--simple"><div><p class="eyebrow">Journal news</p><h2>Announcements</h2></div></header>
         <div class="announcement-list">
@@ -245,7 +249,7 @@
       </div>
     </section>
 
-    <section class="journal-section journal-section--tint section-anchor" id="about-journal">
+    <section class="journal-section journal-section--tint section-anchor page-panel" id="about-journal" data-route="about-journal" hidden>
       <div class="container about-grid">
         <div class="prose"><p class="eyebrow">About the Journal</p><h2>Aims, access and review</h2><p>The <em>Ethiopian Renaissance Journal of Social Sciences and Humanities (ERJSSH)</em> publishes rigorous multidisciplinary scholarship in anthropology, sociology, geography, history, international relations, literature, linguistics, media and communication, political science, psychology, social work, gender studies and related fields.</p><p>ERJSSH is 100% open access and charges no APC. Two selected issues are published each year. Article numbers may vary, while all research papers remain subject to preliminary editorial screening and double-blind review by at least two independent reviewers.</p><p>English is the journal’s only publication language. International authors may be supported under a separate policy; contact the <a href="https://base27-cvnss.github.io/ojs/#home">ERJSSH Editorial Office</a> for current guidance.</p></div>
         <aside class="about-facts" aria-label="Journal information and indexing">
@@ -256,7 +260,7 @@
       </div>
     </section>
 
-    <section class="journal-section section-anchor" id="editorial-team">
+    <section class="journal-section section-anchor page-panel" id="editorial-team" data-route="editorial-team" hidden>
       <div class="container">
         <header class="section-heading section-heading--simple"><div><p class="eyebrow">Governance</p><h2>Editorial Team</h2></div><p class="section-note">Professional roles only; no personal email or profile links are displayed.</p></header>
         <div class="editorial-groups">
@@ -269,14 +273,14 @@
       </div>
     </section>
 
-    <section class="journal-section journal-section--tint section-anchor" id="privacy">
+    <section class="journal-section journal-section--tint section-anchor page-panel" id="privacy" data-route="privacy" hidden>
       <div class="container reading-layout">
         <header class="section-heading section-heading--simple"><div><p class="eyebrow">Data governance</p><h2>Privacy Statement</h2></div></header>
         <div class="prose privacy-copy"><p>ERJSSH protects the personal information required for peer-reviewed publishing, including author and reviewer identity, affiliation, account, manuscript, review and editorial correspondence data.</p><h3>Collection and use</h3><p>Information is used only to manage submission, review, editorial decisions, publication, requested alerts, service improvement and the integrity of the scholarly record. Processing is based on consent, publishing obligations, legitimate scholarly interests and applicable law.</p><h3>Sharing and security</h3><p>Information may be shared only with reviewers, editors and service providers necessary for journal operations and subject to confidentiality and data-protection duties. ERJSSH does not sell or rent personal data. Reasonable organizational and technical safeguards are applied against unauthorized access, use or disclosure.</p><h3>Your rights</h3><p>Data subjects may request access, correction or deletion, object to certain processing, and withdraw consent where consent is the applicable legal basis. Material changes will be communicated through an updated statement on this page.</p></div>
       </div>
     </section>
 
-    <section class="journal-section section-anchor" id="contact">
+    <section class="journal-section section-anchor page-panel" id="contact" data-route="contact" hidden>
       <div class="container contact-grid"><div><p class="eyebrow">Editorial Office</p><h2>Contact</h2></div><address><strong>ERJSSH Editorial Office</strong><br>College of Social Sciences and Humanities<br>University of Gondar, Maraki Campus<br>Aluminium Building, 3rd Floor, Office No. 21<br>Gondar, Ethiopia</address><p class="contact-note">Personal email addresses and telephone numbers are not published. Registration, foreign-author policy and submission access are handled directly by the editorial office. Return to <a href="#home">ERJSSH</a>.</p></div>
     </section>
   </main>
