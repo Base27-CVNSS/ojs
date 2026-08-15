@@ -1,0 +1,16 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ERJSSH Theme 1.1.0.0\n"
+"PO-Revision-Date: 2026-08-15 00:00+0700\n"
+"Last-Translator: Base27-CVNSS\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.themes.erjssh.name"
+msgstr "ERJSSH Academic Theme"
+
+msgid "plugins.themes.erjssh.description"
+msgstr "A compact blue-and-white academic theme with issue-focused reading, article details and open-access policy information for ERJSSH."
