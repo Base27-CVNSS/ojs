@@ -4,10 +4,11 @@ Mã nguồn tái tạo **Ethiopian Renaissance Journal of Social Sciences and Hu
 
 ## Thiết kế
 
-- Bố cục dựa trên giao diện ERJSSH được lưu trữ: thanh tài khoản/ISSN, masthead chữ, menu xanh, ảnh bìa, current issue và các trang thông tin.
-- Không dùng logo website riêng; ảnh bìa do dự án cung cấp là hình ảnh nhận diện duy nhất.
-- Font sans-serif tối giản, responsive và hỗ trợ thao tác bàn phím.
-- Danh sách bài chỉ hiển thị tiêu đề, tác giả và DOI. Không có liên kết PDF, lượt xem, lượt tải hoặc liên kết hồ sơ cá nhân.
+- Bố cục dựa trên giao diện ERJSSH được lưu trữ: thanh tài khoản/ISSN, masthead, menu xanh có mục con, ảnh bìa, current issue và các trang thông tin.
+- Font sans-serif 11–12 px nhất quán, responsive và hỗ trợ thao tác bàn phím; chỉ tiêu đề bài báo dùng chữ hoa toàn bộ.
+- Danh sách bài tập trung vào tiêu đề, tác giả, DOI, tóm tắt, từ khóa, cách trích dẫn, số xuất bản và galley PDF.
+- Số hiện tại là **Vol. 13 No. 1 (2026)**; các số cũ hiển thị trạng thái yêu cầu đăng ký trực tiếp.
+- APC miễn phí, truy cập mở 100%, xuất bản hai số chọn lọc mỗi năm và phản biện kín bởi ít nhất hai chuyên gia độc lập.
 - Editorial Team giữ tên, học vị, chức vụ và cơ quan; loại bỏ email, số điện thoại, ORCID, Google Scholar và ResearchGate.
 - Register, Login và Submission hiển thị thông báo hạn chế quyền nhưng không xóa trạng thái truy cập đã có trong OJS.
 
@@ -17,6 +18,10 @@ Mã nguồn tái tạo **Ethiopian Renaissance Journal of Social Sciences and Hu
 plugins/themes/erjssh/
 ├── ErjsshThemePlugin.php
 ├── assets/erjssh-cover.webp
+├── assets/erjssh-masthead.jpg
+├── assets/erjssh-open-access.png
+├── assets/erjssh-ajol.png
+├── assets/erjssh-sjr.png
 ├── locale/en/locale.po
 ├── scripts/access.js
 ├── styles/index.css

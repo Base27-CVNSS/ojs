@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: ERJSSH Theme 1.0.0.0\n"
+"Project-Id-Version: ERJSSH Theme 1.1.0.0\n"
 "PO-Revision-Date: 2026-08-15 00:00+0700\n"
 "Last-Translator: Base27-CVNSS\n"
 "Language-Team: English\n"
@@ -13,4 +13,4 @@ msgid "plugins.themes.erjssh.name"
 msgstr "ERJSSH Academic Theme"
 
 msgid "plugins.themes.erjssh.description"
-msgstr "A blue-and-white, sans-serif academic theme for the Ethiopian Renaissance Journal of Social Sciences and Humanities."
+msgstr "A compact blue-and-white academic theme with issue-focused reading, article details and open-access policy information for ERJSSH."

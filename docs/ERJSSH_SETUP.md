@@ -11,34 +11,42 @@
 | Online ISSN | 2409-6385 |
 | Print ISSN hiển thị | 2409-6385 |
 | Ngôn ngữ | English |
-| Tần suất | Biannual — February and July |
-| Truy cập | Open access; no publication charge |
+| Tần suất | Biannual — two selected issues per year |
+| Truy cập | 100% open access; APC free |
+| Phản biện | Double-blind; at least two independent reviewers |
 | Trích dẫn | APA 7th edition |
 
 ## Điều hướng
 
-Tạo menu chính theo thứ tự: **Home, Current, Archives, Guidelines, Submissions, Announcements, About, Contact**. Trong About, tạo các trang **About the Journal, Editorial Team, Privacy Statement**. Không nhập email cá nhân, số điện thoại hoặc liên kết hồ sơ của thành viên biên tập.
+Tạo menu chính theo thứ tự: **Home, Current, Archives, Guidelines, Submissions, Announcements, About, Contact**.
+
+- Trong **Guidelines**, tạo ba mục con: **Author Guideline, Reviewers Guideline, Editorial Process**.
+- Trong **About**, tạo ba mục con: **About the Journal, Editorial Team, Privacy Statement**.
+- Không nhập email cá nhân, số điện thoại hoặc liên kết hồ sơ của thành viên biên tập.
+- Chỉ bật locale tiếng Anh cho giao diện xuất bản của tạp chí.
 
 ## Kỳ hiện tại
 
 | Trường | Giá trị |
 |---|---|
-| Volume | 12 |
-| Number | 2 |
-| Year | 2025 |
-| Ngày xuất bản | 2025-07-31 |
+| Volume | 13 |
+| Number | 1 |
+| Year | 2026 |
+| Ngày xuất bản | 2026-07-13 |
 | Section | Original Research Articles |
 | Số bài | 10 |
 
-Khai báo DOI theo dải `10.4314/erjssh.v12i2.1` đến `10.4314/erjssh.v12i2.10`. Theme chỉ liên kết DOI đã đăng ký; không tạo DOI giả và không dùng liên kết PDF trong danh sách bài.
+Khai báo DOI đã đăng ký theo dải `10.4314/erjssh.v13i1.1` đến `10.4314/erjssh.v13i1.10`. Nạp galley PDF gốc cho từng bài để nút **Download PDF** được OJS tạo động; không ghi cứng đường dẫn galley trong theme.
+
+Trong Archive, số hiện tại được mở. Các số cũ hiển thị trạng thái yêu cầu đăng ký trực tiếp; không xóa publication, submission hoặc quyền người dùng đã có trong cơ sở dữ liệu.
 
 ## Kích hoạt theme
 
 1. Mở **Settings → Website → Appearance**.
 2. Chọn **ERJSSH Academic Theme**.
 3. Lưu và xóa data/template cache.
-4. Không tải logo website; theme dùng masthead chữ và ảnh bìa `assets/erjssh-cover.webp`.
-5. Kiểm tra menu, DOI, Register/Login notice và responsive ở 360, 768, 1024 và 1440 px.
+4. Giữ các ảnh nhận diện trong `plugins/themes/erjssh/assets/`; ảnh bìa là `erjssh-cover.webp`.
+5. Kiểm tra menu con, DOI, galley PDF, Register/Login notice và responsive ở 360, 768, 1024 và 1440 px.
 
 ## Bảo mật và dữ liệu
 
