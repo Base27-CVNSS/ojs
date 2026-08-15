@@ -16,14 +16,20 @@
 		<div class="erjssh_hero__content">
 			<p class="erjssh_label">Peer-reviewed · 100% open access · Biannual</p>
 			<h1 id="erjssh-title">Ethiopian Renaissance Journal of Social Sciences and Humanities</h1>
-			<p>A peer-reviewed, English-language journal publishing multidisciplinary research in the social sciences and humanities.</p>
-			<dl class="erjssh_facts">
-				<div><dt>Publication fee</dt><dd>No APC</dd></div>
-				<div><dt>Access</dt><dd>100% open access</dd></div>
-				<div><dt>Frequency</dt><dd>Two issues annually</dd></div>
-				<div><dt>Peer review</dt><dd>Double-blind · two reviewers</dd></div>
-			</dl>
-			<p class="erjssh_foreign_policy">Article counts vary by issue; all submissions follow the same review standards. International authors should consult the ERJSSH Editorial Office.</p>
+			<p>Published by the University of Gondar, ERJSSH is an open-access, peer-reviewed journal indexed in Scopus. It publishes multidisciplinary research across anthropology, history, sociology, geography, international relations, linguistics, political science and media studies.</p>
+			<div class="erjssh_overview" aria-label="Journal overview">
+				<dl class="erjssh_facts">
+					<div><dt>Publisher</dt><dd>University of Gondar</dd></div>
+					<div><dt>Established</dt><dd>2014</dd></div>
+					<div><dt>ISSN</dt><dd>2409-6377 · eISSN 2409-6385</dd></div>
+					<div><dt>Frequency</dt><dd>Biannual · 28 February / 31 August</dd></div>
+				</dl>
+				<a class="erjssh_sjr" href="https://www.scimagojr.com/journalsearch.php?q=21101111533&amp;tip=sid&amp;clean=0" rel="external noopener" aria-label="View ERJSSH on SCImago Journal Rank">
+					<img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-sjr.png" alt="ERJSSH SCImago Journal Rank 2025" width="200" height="200">
+					<span>Scopus · SJR 2025: 0.143</span>
+				</a>
+			</div>
+			<p class="erjssh_foreign_policy">No APC is charged. Article counts vary by issue; all submissions follow the same review standards. International authors should consult the ERJSSH Editorial Office.</p>
 		</div>
 	</section>
 
@@ -49,7 +55,7 @@
 		<div class="erjssh_marks">
 			<img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-open-access.png" alt="Open access" width="300" height="120">
 			<img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-ajol.png" alt="African Journals Online" width="938" height="232">
-			<a href="https://www.scimagojr.com/journalsearch.php?q=21101111533&amp;tip=sid&amp;exact=no" rel="external"><img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-sjr.png" alt="SCImago Journal Rank profile" width="200" height="200"></a>
+			<a href="https://www.scimagojr.com/journalsearch.php?q=21101111533&amp;tip=sid&amp;clean=0" rel="external noopener"><img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-sjr.png" alt="SCImago Journal Rank profile" width="200" height="200"></a>
 		</div>
 	</section>
 
