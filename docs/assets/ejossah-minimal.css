@@ -67,10 +67,8 @@ h1 { max-width: 800px; margin-bottom: 18px; font-size: clamp(2.25rem, 5.8vw, 5re
 .search svg { position: absolute; top: 10px; right: 2px; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 
 .articles { padding-bottom: 90px; }
-.article { display: grid; grid-template-columns: 76px minmax(0, var(--reading)); gap: 42px; padding: clamp(58px, 9vw, 100px) 0; border-bottom: 1px solid var(--line-dark); }
+.article { max-width: var(--reading); padding: clamp(58px, 9vw, 100px) 0; border-bottom: 1px solid var(--line-dark); }
 .article:first-child { border-top: 0; }
-.article__number { color: var(--faint); font-size: .68rem; font-weight: 700; letter-spacing: .08em; }
-.article__type { margin-bottom: 16px; color: var(--muted); font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .article h2 { margin-bottom: 12px; font-size: clamp(1.65rem, 3.6vw, 2.75rem); font-weight: 560; line-height: 1.12; letter-spacing: -.035em; }
 .article__subtitle { margin: -2px 0 16px; color: var(--muted); font-size: 1.08rem; line-height: 1.45; }
 .article__authors { margin-bottom: 11px; font-size: .93rem; font-weight: 620; }
@@ -96,8 +94,6 @@ h1 { max-width: 800px; margin-bottom: 18px; font-size: clamp(2.25rem, 5.8vw, 5re
   .issue-intro__grid { grid-template-columns: 1fr; gap: 36px; }
   .article-tools__inner { align-items: stretch; flex-direction: column; padding: 14px 0; gap: 8px; }
   .search { width: 100%; }
-  .article { grid-template-columns: 1fr; gap: 14px; }
-  .article__number { padding-bottom: 8px; border-bottom: 1px solid var(--line); }
   .journal-footer__inner { grid-template-columns: 1fr; }
   .journal-footer__ids { text-align: left; }
 }
