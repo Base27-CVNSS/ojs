@@ -13,7 +13,7 @@ Child theme for OJS 3.6, designed for the Ethiopian Renaissance Journal of Socia
 
 Configure the OJS primary navigation with nested custom items:
 
-- Guidelines → Author Guideline, Reviewers Guideline, Editorial Process
+- Guidelines → Author Guidelines, Reviewer Guidelines, Editorial Process
 - About → About the Journal, Editorial Team, Privacy Statement
 
 Activate at **Settings → Website → Appearance**, select **ERJSSH Academic Theme**, save and clear the OJS template cache.

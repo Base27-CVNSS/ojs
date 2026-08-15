@@ -16,14 +16,14 @@
 		<div class="erjssh_hero__content">
 			<p class="erjssh_label">Peer-reviewed · 100% open access · Biannual</p>
 			<h1 id="erjssh-title">Ethiopian Renaissance Journal of Social Sciences and Humanities</h1>
-			<p>Rigorous multidisciplinary scholarship in the social sciences and humanities, published by the College of Social Sciences and Humanities, University of Gondar.</p>
+			<p>A peer-reviewed, English-language journal publishing multidisciplinary research in the social sciences and humanities.</p>
 			<dl class="erjssh_facts">
-				<div><dt>Publication fee</dt><dd>APC free</dd></div>
+				<div><dt>Publication fee</dt><dd>No APC</dd></div>
 				<div><dt>Access</dt><dd>100% open access</dd></div>
-				<div><dt>Frequency</dt><dd>Two selected issues per year</dd></div>
-				<div><dt>Peer review</dt><dd>Two independent reviewers</dd></div>
+				<div><dt>Frequency</dt><dd>Two issues annually</dd></div>
+				<div><dt>Peer review</dt><dd>Double-blind · two reviewers</dd></div>
 			</dl>
-			<p class="erjssh_foreign_policy">The article count may vary by issue; editorial quality remains the primary criterion. International authors are covered by a separate policy. Please contact the ERJSSH Editorial Office.</p>
+			<p class="erjssh_foreign_policy">Article counts vary by issue; all submissions follow the same review standards. International authors should consult the ERJSSH Editorial Office.</p>
 		</div>
 	</section>
 
@@ -40,12 +40,12 @@
 	<section class="erjssh_policy" id="about-journal">
 		<header><p class="erjssh_label">About the Journal</p><h2>Aims, access and review</h2></header>
 		<div class="erjssh_policy_grid">
-			<div><strong>APC</strong><p>Free of charge</p></div>
+			<div><strong>APC</strong><p>None</p></div>
 			<div><strong>Access</strong><p>100% open access</p></div>
-			<div><strong>Frequency</strong><p>Two issues per year</p></div>
-			<div><strong>Review</strong><p>Double-blind; two independent reviewers</p></div>
+			<div><strong>Frequency</strong><p>Two issues annually</p></div>
+			<div><strong>Review</strong><p>Double-blind · two reviewers</p></div>
 		</div>
-		<p>ERJSSH publishes English-language multidisciplinary scholarship across the social sciences and humanities. Article capacity may increase or decrease between issues, while publication remains conditional on successful editorial screening and peer review.</p>
+		<p>ERJSSH publishes multidisciplinary research in English. All articles undergo editorial screening and double-blind peer review. Article counts may vary by issue.</p>
 		<div class="erjssh_marks">
 			<img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-open-access.png" alt="Open access" width="300" height="120">
 			<img src="{$baseUrl}/plugins/themes/erjssh/assets/erjssh-ajol.png" alt="African Journals Online" width="938" height="232">
@@ -65,15 +65,15 @@
 
 	<section class="erjssh_info" id="privacy">
 		<header><p class="erjssh_label">Data governance</p><h2>Privacy Statement</h2></header>
-		<p>ERJSSH collects only the identity, affiliation, account, manuscript, review and correspondence data necessary for scholarly publishing. Information is used to manage submission, peer review, editorial decisions, publication and the integrity of the scholarly record.</p>
-		<p>Data may be shared only with reviewers, editors and service providers required for journal operations. ERJSSH does not sell personal information. Authors, reviewers and readers may request access, correction or deletion, object to certain processing, or withdraw consent where applicable.</p>
+		<p>ERJSSH processes only the identity, affiliation, account, manuscript, review and correspondence data required for scholarly publishing.</p>
+		<p>Data are shared only with reviewers, editors and essential service providers. ERJSSH does not sell personal data. Users may request access, correction or deletion, object to eligible processing, or withdraw consent where applicable.</p>
 	</section>
 
 	<section class="erjssh_guidelines" id="guidelines">
 		<header><p class="erjssh_label">For contributors</p><h2>Guidelines</h2></header>
-		<details id="author-guideline"><summary>Author Guideline</summary><p>Submit original English-language work in an anonymized review file and a complete author file. Use APA 7th edition, provide a 140–200 word abstract and five to eight keywords, and include all required ethics and permission documentation. Submission and publication are free.</p></details>
-		<details id="reviewer-guideline"><summary>Reviewers Guideline</summary><p>Assess originality, method, evidence, argument, ethics and contribution objectively and confidentially. Declare conflicts and report suspected misconduct privately to the editor.</p></details>
-		<details id="editorial-process"><summary>Editorial Process</summary><p>Administrative screening is followed by editorial assessment, double-blind review by two independent specialists, revision, final decision, copy-editing, production and author approval.</p></details>
+		<details id="author-guideline"><summary>Author Guidelines</summary><p>Submit original English-language work as an anonymized review file and a complete author file. Use APA 7th edition, include a 140–200 word abstract and five to eight keywords, and provide all ethics and permissions documentation. No APC is charged.</p></details>
+		<details id="reviewer-guideline"><summary>Reviewer Guidelines</summary><p>Assess originality, methodology, evidence, argument, ethics and contribution. Reviews must be objective, constructive and confidential. Declare conflicts and report suspected misconduct to the editor.</p></details>
+		<details id="editorial-process"><summary>Editorial Process</summary><p>Screening is followed by editorial assessment, double-blind review by at least two independent reviewers, revision, final decision, copyediting, production and author approval.</p></details>
 	</section>
 </div>
 
