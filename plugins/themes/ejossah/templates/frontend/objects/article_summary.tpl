@@ -8,19 +8,22 @@
 {assign var=doiObject value=$publication->getData('doiObject')}
 {assign var=abstract value=$publication->getLocalizedData('abstract')}
 {assign var=keywords value=$publication->getLocalizedData('keywords')}
+{if !$heading}
+	{assign var="heading" value="h2"}
+{/if}
 
 <article class="obj_article_summary">
-	<h3 class="title">
+	<{$heading} class="title">
 		<a id="article-{$article->getId()}" href="{if $doiObject}{$doiObject->getData('resolvingUrl')|escape}{else}{url page="article" op="view" path=$article->getBestId()}{/if}"{if $doiObject} rel="external"{/if}>
 			{$publication->getLocalizedTitle()|strip_unsafe_html}
 			{if $publication->getLocalizedSubtitle()}
 				<span class="subtitle">{$publication->getLocalizedSubtitle()|strip_unsafe_html}</span>
 			{/if}
 		</a>
-	</h3>
+	</{$heading}>
 
 	<div class="meta">
-		{if !$article->getData('hideAuthor')}
+		{if $publication->getData('authors')}
 			<span class="authors">{$publication->getAuthorString()|escape}</span>
 		{/if}
 		{if $publication->getData('pages')}
@@ -30,7 +33,7 @@
 
 	{if $doiObject}
 		<a class="ejossah_doi" href="{$doiObject->getData('resolvingUrl')|escape}" rel="external">
-			{$doiObject->getData('doi')|escape}
+			{$doiObject->getData('resolvingUrl')|escape}
 		</a>
 	{/if}
 
@@ -45,7 +48,7 @@
 		<p class="ejossah_keywords">
 			<strong>Keywords</strong>
 			{foreach from=$keywords item=keyword name=ejossahKeywords}
-				{$keyword|escape}{if !$smarty.foreach.ejossahKeywords.last}, {/if}
+				{$keyword.name|escape}{if !$smarty.foreach.ejossahKeywords.last}, {/if}
 			{/foreach}
 		</p>
 	{/if}
