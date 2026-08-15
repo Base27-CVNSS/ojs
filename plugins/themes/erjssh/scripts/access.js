@@ -15,6 +15,10 @@
   document.body.append(dialog);
 
   const close = () => dialog.close();
+  const open = (title = 'Access restricted') => {
+    dialog.querySelector('#erjssh-access-title').textContent = title;
+    dialog.showModal();
+  };
   dialog.querySelector('.erjssh_dialog_close').addEventListener('click', close);
   dialog.querySelector('.erjssh_dialog_confirm').addEventListener('click', close);
   dialog.addEventListener('click', (event) => {
@@ -24,7 +28,22 @@
   document.querySelectorAll(selectors.join(',')).forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      dialog.showModal();
+      open();
+    });
+  });
+
+  const archiveIssues = [...document.querySelectorAll('.page_issue_archive .obj_issue_summary')];
+  archiveIssues.slice(1).forEach((issue) => {
+    issue.classList.add('erjssh_locked_issue');
+    const link = issue.querySelector('a');
+    if (!link) return;
+    const badge = document.createElement('span');
+    badge.className = 'erjssh_lock_badge';
+    badge.textContent = 'Direct registration required';
+    issue.append(badge);
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      open(`${link.textContent.trim()} access restricted`);
     });
   });
 })();
